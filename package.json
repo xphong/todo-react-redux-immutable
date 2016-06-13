@@ -1,0 +1,11 @@
+{
+  "name": "todo-react-redux-immutable",
+  "version": "0.0.1",
+  "description": "todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Phong Huynh",
+  "license": "ISC"
+}
