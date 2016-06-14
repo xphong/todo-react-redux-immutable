@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import AddTodo from './AddTodo';
-import { addTodo } from '../actions/todo';
+import { addTodo, deleteTodo } from '../actions/todo';
 
 const TodoList = ({todos, dispatch}) => (
   <div>
@@ -13,7 +13,9 @@ const TodoList = ({todos, dispatch}) => (
         e.target.value = ''
       }
     }}/>
-    {todos.map(todo => <p key={todo}>{todo}</p>)}
+    {todos.map((todo, index) => <p key={index}>{todo} <button onClick={e => {
+      dispatch(deleteTodo(index))
+    }}>X</button></p>)}
   </div>
 )
 
