@@ -7,3 +7,7 @@ To run dev server:
 ```
 npm start
 ```
+
+
+## TODO
+* Separate into presentational and container components 
