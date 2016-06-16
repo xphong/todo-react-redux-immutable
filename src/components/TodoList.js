@@ -17,12 +17,12 @@ const TodoList = ({todos, dispatch}) => (
       dispatch(deleteTodo(index))
     }}>X</button></p>)}
   </div>
-)
+);
 
-function mapStateToProps(todos) {
+function mapStateToProps(state) {
   return {
-    todos
-  }
+    todos: state.todos
+  };
 }
 
 export default connect(mapStateToProps)(TodoList);
