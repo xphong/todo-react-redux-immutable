@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
 import store from './store';
-import TodoList from './components/TodoList';
+import App from './containers/App';
 
 ReactDOM.render(
   <Provider store={store}>
-    <TodoList />
+    <App />
   </Provider>,
   document.getElementById('root')
 );
